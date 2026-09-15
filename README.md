@@ -25,6 +25,8 @@ The audit table stores details like:
 
 This gives you a clean record of each ETL run without having to dig through logs manually.
 
+![Schema](images/etl_audit_er_diagram.svg)
+
 ## How the load process works
 
 1. A job ID is created for each run.
@@ -59,6 +61,14 @@ ORDER BY start_time DESC;
 ```
 
 This makes it easy to see which loads succeeded, how much data moved, and where a process may have failed.
+
+## Sample Data
+
+[View the audit table](./sample/sample_data.csv)
+
+## Grafana Dashboard
+
+![Dashboard](images/grafana_dashboard.png)
 
 ## Notes
 
