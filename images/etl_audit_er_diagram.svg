@@ -1,0 +1,159 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="980" viewBox="0 0 760 980" role="img" aria-labelledby="title desc">
+  <title id="title">ETL Audit Table ER Diagram</title>
+  <desc id="desc">Entity relationship diagram for the audit.etl_audit table showing columns and primary key.</desc>
+
+  <defs>
+    <style>
+      .title { font: 700 28px 'Segoe UI', Arial, sans-serif; fill: #1f2937; }
+      .table-name { font: 700 24px 'Segoe UI', Arial, sans-serif; fill: #111827; }
+      .header { fill: #e5e7eb; stroke: #9ca3af; stroke-width: 1.5; }
+      .body { fill: #ffffff; stroke: #9ca3af; stroke-width: 1.5; }
+      .label { font: 600 15px 'Segoe UI', Arial, sans-serif; fill: #111827; }
+      .type { font: 500 14px 'Segoe UI', Arial, sans-serif; fill: #4b5563; }
+      .pk { font: 700 12px 'Segoe UI', Arial, sans-serif; fill: #b91c1c; }
+      .small { font: 500 12px 'Segoe UI', Arial, sans-serif; fill: #6b7280; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="760" height="980" fill="#f9fafb"/>
+
+  <text x="380" y="52" text-anchor="middle" class="title">audit.etl_audit</text>
+
+  <rect x="150" y="90" width="460" height="40" rx="8" class="header"/>
+  <text x="380" y="117" text-anchor="middle" class="table-name">ETL Audit Log</text>
+
+  <rect x="150" y="130" width="460" height="790" rx="10" class="body"/>
+
+  <g>
+    <line x1="150" y1="170" x2="610" y2="170" stroke="#d1d5db" stroke-width="1"/>
+    <text x="175" y="150" class="small">Column</text>
+    <text x="420" y="150" class="small">Type</text>
+    <text x="565" y="150" class="small">Key</text>
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <text x="175" y="195" class="label">id</text>
+    <text x="420" y="195" class="type">text</text>
+    <text x="565" y="195" class="pk">PK</text>
+
+    <line x1="150" y1="205" x2="610" y2="205" stroke="#e5e7eb" stroke-width="1"/>
+
+    <text x="175" y="230" class="label">job_name</text>
+    <text x="420" y="230" class="type">text</text>
+    <text x="565" y="230" class="small"> </text>
+
+    <line x1="150" y1="240" x2="610" y2="240" stroke="#e5e7eb" stroke-width="1"/>
+
+    <text x="175" y="265" class="label">task_name</text>
+    <text x="420" y="265" class="type">text</text>
+    <text x="565" y="265" class="small"> </text>
+
+    <line x1="150" y1="275" x2="610" y2="275" stroke="#e5e7eb" stroke-width="1"/>
+
+    <text x="175" y="300" class="label">status</text>
+    <text x="420" y="300" class="type">char(1)</text>
+    <text x="565" y="300" class="small"> </text>
+
+    <line x1="150" y1="310" x2="610" y2="310" stroke="#e5e7eb" stroke-width="1"/>
+
+    <text x="175" y="335" class="label">start_time</text>
+    <text x="420" y="335" class="type">TIMESTAMPTZ</text>
+    <text x="565" y="335" class="small"> </text>
+
+    <line x1="150" y1="345" x2="610" y2="345" stroke="#e5e7eb" stroke-width="1"/>
+
+    <text x="175" y="370" class="label">end_time</text>
+    <text x="420" y="370" class="type">TIMESTAMPTZ</text>
+    <text x="565" y="370" class="small"> </text>
+
+    <line x1="150" y1="380" x2="610" y2="380" stroke="#e5e7eb" stroke-width="1"/>
+
+    <text x="175" y="405" class="label">src_system</text>
+    <text x="420" y="405" class="type">text</text>
+    <text x="565" y="405" class="small"> </text>
+
+    <line x1="150" y1="415" x2="610" y2="415" stroke="#e5e7eb" stroke-width="1"/>
+
+    <text x="175" y="440" class="label">src_database</text>
+    <text x="420" y="440" class="type">text</text>
+    <text x="565" y="440" class="small"> </text>
+
+    <line x1="150" y1="450" x2="610" y2="450" stroke="#e5e7eb" stroke-width="1"/>
+
+    <text x="175" y="475" class="label">src_table</text>
+    <text x="420" y="475" class="type">text</text>
+    <text x="565" y="475" class="small"> </text>
+
+    <line x1="150" y1="485" x2="610" y2="485" stroke="#e5e7eb" stroke-width="1"/>
+
+    <text x="175" y="510" class="label">src_count</text>
+    <text x="420" y="510" class="type">int</text>
+    <text x="565" y="510" class="small"> </text>
+
+    <line x1="150" y1="520" x2="610" y2="520" stroke="#e5e7eb" stroke-width="1"/>
+
+    <text x="175" y="545" class="label">tgt_system</text>
+    <text x="420" y="545" class="type">text</text>
+    <text x="565" y="545" class="small"> </text>
+
+    <line x1="150" y1="555" x2="610" y2="555" stroke="#e5e7eb" stroke-width="1"/>
+
+    <text x="175" y="580" class="label">tgt_database</text>
+    <text x="420" y="580" class="type">text</text>
+    <text x="565" y="580" class="small"> </text>
+
+    <line x1="150" y1="590" x2="610" y2="590" stroke="#e5e7eb" stroke-width="1"/>
+
+    <text x="175" y="615" class="label">tgt_table</text>
+    <text x="420" y="615" class="type">text</text>
+    <text x="565" y="615" class="small"> </text>
+
+    <line x1="150" y1="625" x2="610" y2="625" stroke="#e5e7eb" stroke-width="1"/>
+
+    <text x="175" y="650" class="label">tgt_count</text>
+    <text x="420" y="650" class="type">int</text>
+    <text x="565" y="650" class="small"> </text>
+
+    <line x1="150" y1="660" x2="610" y2="660" stroke="#e5e7eb" stroke-width="1"/>
+
+    <text x="175" y="685" class="label">load_type</text>
+    <text x="420" y="685" class="type">text</text>
+    <text x="565" y="685" class="small"> </text>
+
+    <line x1="150" y1="695" x2="610" y2="695" stroke="#e5e7eb" stroke-width="1"/>
+
+    <text x="175" y="720" class="label">error_msg</text>
+    <text x="420" y="720" class="type">text</text>
+    <text x="565" y="720" class="small"> </text>
+
+    <line x1="150" y1="730" x2="610" y2="730" stroke="#e5e7eb" stroke-width="1"/>
+
+    <text x="175" y="755" class="label">record_inserted</text>
+    <text x="420" y="755" class="type">int</text>
+    <text x="565" y="755" class="small"> </text>
+
+    <line x1="150" y1="765" x2="610" y2="765" stroke="#e5e7eb" stroke-width="1"/>
+
+    <text x="175" y="790" class="label">record_deleted</text>
+    <text x="420" y="790" class="type">int</text>
+    <text x="565" y="790" class="small"> </text>
+
+    <line x1="150" y1="800" x2="610" y2="800" stroke="#e5e7eb" stroke-width="1"/>
+
+    <text x="175" y="825" class="label">record_updated</text>
+    <text x="420" y="825" class="type">int</text>
+    <text x="565" y="825" class="small"> </text>
+
+    <line x1="150" y1="835" x2="610" y2="835" stroke="#e5e7eb" stroke-width="1"/>
+
+    <text x="175" y="860" class="label">insert_dttm</text>
+    <text x="420" y="860" class="type">TIMESTAMPTZ</text>
+    <text x="565" y="860" class="small"> </text>
+
+    <line x1="150" y1="870" x2="610" y2="870" stroke="#e5e7eb" stroke-width="1"/>
+
+    <text x="175" y="895" class="label">update_dttm</text>
+    <text x="420" y="895" class="type">TIMESTAMPTZ</text>
+    <text x="565" y="895" class="small"> </text>
+  </g>
+</svg>
