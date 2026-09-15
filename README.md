@@ -68,7 +68,7 @@ This makes it easy to see which loads succeeded, how much data moved, and where 
 
 ## Grafana Dashboard
 
-![Dashboard](images/grafana_dashboard.png)
+![Dashboard](images/grafana_dashboard-v2.png)
 
 ## Notes
 
